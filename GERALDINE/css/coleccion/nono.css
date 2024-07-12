@@ -1,0 +1,125 @@
+.ultimas-fotos {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(133, 24, 133);
+    font-size: 30px;
+    margin-bottom: 10px; /* Espacio inferior para separar del contenido siguiente */
+    margin-top: -50px;
+  }
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px; /* Ajustar máximo ancho del contenedor principal */
+    margin: 0 auto; /* Centrar la galería en la página */
+    padding: 20px; /* Espaciado interno para la galería */
+  }
+  
+  /* Estilo para las filas */
+  .fila {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ancho completo por defecto */
+    margin-bottom: 20px; /* Espacio entre las filas */
+  }
+  
+  /* Estilo para los contenedores de imágenes */
+  .imagen-container {
+    width: calc(50% - 10px); /* Ancho para 2 imágenes por fila */
+    margin-bottom: 20px; /* Espacio entre los contenedores de imagen */
+    position: relative; /* Para posicionar el enlace dentro del contenedor */
+    box-sizing: border-box; /* Incluir padding y border en el ancho total */
+  }
+  
+  /* Estilo para imágenes horizontales */
+  .imagen-container.horizontal {
+    height: auto; /* Altura automática para las imágenes horizontales */
+  }
+  
+  /* Estilo para imágenes verticales */
+  .imagen-container.vertical {
+    width: 49%; /* Ancho completo para las imágenes verticales */
+    max-height: 660px;
+    overflow: hidden;
+  }
+  
+  .imagen-container img {
+    width: 100%;
+    height: auto; /* Ajuste automático de altura */
+    object-fit: cover; /* Ajustar la imagen al contenedor manteniendo la proporción */
+    display: block;
+    max-width: 100%; /* Añadido para asegurar que las imágenes no superen su tamaño original */
+  }
+
+  .imagen-container.vertical img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ajusta la imagen al contenedor sin cambiar su relación de aspecto */
+  }
+  
+  .imagen-container a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(133, 24, 133);
+    color: pink;
+    padding: 15px 25px;
+    text-decoration: none;
+    display: none; /* Ocultar el link inicialmente */
+  }
+  
+  .imagen-container:hover a {
+    display: block; /* Mostrar el link al pasar el ratón */
+  }
+
+  .footer {
+    background-color: rgb(252, 244, 250); /* Color de fondo del footer */
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(133, 24, 133);
+    padding: 40px; /* Aumenta el espaciado interno */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra verticalmente el contenido */
+    text-align: center; /* Centra horizontalmente el contenido */
+    margin-top: 30px;
+}
+
+.footer h3{
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(133, 24, 133);
+    font-size: 40px; /* Aumenta el tamaño de la fuente */
+    margin-bottom: 20px; /* Aumenta el espacio inferior */
+}
+
+footer p{
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(173, 37, 173);
+  font-size: 30px;
+  margin-top: -10px;
+
+}
+
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Alinear elementos de la lista en línea */
+  justify-content: center; /* Centrar horizontalmente los elementos */
+}
+
+.footer ul li {
+  margin-right: 60px; /* Espaciado entre elementos */
+}
+
+.footer ul li:first-child {
+  margin-left: 60px; /* Margen izquierdo para desplazar el conjunto hacia la derecha */
+}
+
+.footer ul li img {
+  width: 30px; /* Tamaño de las imágenes de redes sociales */
+  height: 30px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos-generales.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@180&display=swap" rel="stylesheet">
+    <title>Geraldine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@180&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/iniciar-sesion.css">
+</head>
+
+
+<body>
+  <header>
+      <div>
+       <a class="titulo" href="../paginas/index.html">Geraldine Condoleo</a>
+      </div>
+
+      <nav class="menu">
+        <div class="apartados">
+          <ul>
+            <li><a href="../paginas/registros/registros.html">registros</a></li>
+            <li><a href="../paginas/contacto.html">contacto</a></li>
+            <li><a href="../paginas/iniciar-sesion.html">iniciar sesion</a></li>
+            <li><a href="../paginas/registrarse.html">registrarse</a></li>
+          </ul>
+        </div>
+      </nav>
+
+  </header>
+
+  <section class="contenedor">
+    <div class="ultimas-fotos">
+      <h1>Iniciar Sesión</h1>
+    </div>
+        
+    <form action="#" method="POST" class="formulario">
+      <div class="campo">
+       <label for="email">Correo electrónico:</label>
+       <input type="email" id="email" name="email" required>
+      </div>
+            
+      <div class="campo">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      
+      <button type="submit">Iniciar Sesión</button>
+    </form>
+
+     <p class="registrarme">No tenes cuenta creada?</p>
+     <a href="registrarse.html" class="boton">REGISTRARME</a>
+
+  </section>
+
+  <footer class="footer">
+        
+    <div>
+        <h3>Seguime en: <br> </h3>
+        <ul>
+            <li><a href="https://www.facebook.com/" target="_blank"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATtJREFUSEu1lY0RwiAMhdNJ1EnUSdRJ1EnUSdRJdBT7esA9aALhznLn0Qrke/lpGGThMSxsXzyAnYhsRQQzft9xfoX5HZ5NnTXAWkRuwWjNUQD3ATjbZwHO485LR/gAuYvItTyjAbzGYRRe8oCoDFICcOBTUQ6jMAC1cbAgrJ84LyXg2Yj5Rol16TEg2DcNBhxDUi0HoBrq4oC3B6ouPoeko9IyQCv2HN+WmLSXPUBJ4qA1oD7GviUG6uFF5gGSW1YFw3oAKQ/sgQbIEma4ZhXGZJsB2kYPQBOWCoIBWlxjG4AYPHMFxWftu1EBaGTw4h9JTvnq+dC8SU4VVOYA77VW4QWkj0wD4D+rxj2AZrOL8dcgLQCvpzz2XDgWYNZBuUo8V2Zsanw9oqWsxq75sG6yCPEAKpXbXloc8AOPHlEZbVZaMAAAAABJRU5ErkJggg==" /></a>
+            </li>
+            <li><a href="https://twitter.com/" target="_blank"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQ5JREFUSEvlldENwjAMRK+bwCTAJMAkwCTAJLAJbAJ6VYyS1EmTj35hCVFI4rPvLu6ghWNYOL/+F2Ar6SRpFSi+SbqE3/vwPC7lFD0kHSW9K9ocJF2ddc4AyHkAXYBPSG4VeTjsKQUgT0n38J10APorOnkOG+NuStXHgDtLXqIIfi1IzoeKjAKPHttP51D0i1wDKozF670mVYCcot7k7E8EbqGoF2SdOzCniC6wqvm7F2AyGbxRgchcFvToiQk9HkX812LFHBiHQc8kSsMOJ3EPWiPxfs2m8Ro6QNUckEuNJfI6MIHpYk6HYuUeQI+DmDdzQ3HE8GyKizbBqrFd40FWm7aJbv/7Rmu17/Iv/S/ZejIZnal+BAAAAABJRU5ErkJggg==" /></a>
+            </li>
+            <li><a href="https://ar.linkedin.com/" target="_blank"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOJJREFUSEvtlcEJAkEMRd92oh60De3Es+BBsAELEETwrJ1oGR4EtRHRyOwSQ9xhZ1w8aI7Zmf+Snwlb0HIULevjAXrADbh8Am4Ba2AahJfAPBeiAQPgaAQ7wDUHEgN0c62yFm2ASah4Bcxyqpe73pD7YcinXHEPIJ7rKF9SXX4YbDx4BdkOzkApJuIyA4k9IEISkh8BctYWs3u4stDJVIDtSGsKvOomBRAbjYgL5BmpAC0yBraKqq1NBtj9eDe7ZIDtXD+CF2dSLfoDqoXyFs17fT80g9iWNv7+lZ9+4yrrLtwBU35IGZ5qXwQAAAAASUVORK5CYII=" /></a>
+            </li>
+            <li><a href="https://www.instagram.com/" target="_blank"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW5JREFUSEvFlc1NBDEMhd82wRWoBLhwpwAEVAKIQoAyOAGV8HPhTAWwH/IbWRPPbFZotJFWq1Ecv5/YzkoLr9XC+bUzgANJF5KO4zcl9D02XiTdSvL3EF8puJR0HxEc4PDcggxEiH0IoEkAgt8i6ckW98O554i/yqTGCmCOgsNKbgF4Hoy/JZ1V5MYAsEdqxR7g/bUNsH0NO04lPUn6jD2rGM6PAX7iIDK9SIgyfM4LIneSviTtrVU/hk3E48Df6gGAFclvwg5XGN+ADMmCCEqHvJsAXFFOnhV4Dztcab7DWYCcbO7SXXFVfDfAdVgzVVXc2b8A8J47qCwyOAVBg7G6LCLYVeQK4t9dmi8Z73NJbw0Aq7kyJXmePxsBmkYJ6Z43R5HwI9mSK6tp1GpU4PuYWc9YclVli5tGc5DHRTN+J5CyjbkvygfHDZRnfc+4JiZXVDkq8vyhDO39HIDfDGZR83bs7MnsudSumMUV/AIe7GgZglVbgwAAAABJRU5ErkJggg==" /></a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+
+    <div>
+        <h3>Email</h3>
+        <p> geraldineanalogica@gmail.com
+        </p>
+   
+</footer>
+
+  
+        
+</body>
+</html>

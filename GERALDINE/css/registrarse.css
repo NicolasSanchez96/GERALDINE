@@ -1,0 +1,162 @@
+.contenedor {
+    position: relative;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .contenedor::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%; 
+    height: 120%; 
+    background-image: url(../media/AA034.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    opacity: 0.2; 
+    z-index: -1;
+}
+  
+  .ultimas-fotos {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(133, 24, 133);
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: -40px;
+  }
+  
+  .formulario {
+    background-color: pink;
+    max-width: 30%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(133, 24, 133);
+    
+  }
+  
+  .campo {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .campo label {
+    font-family: 'Josefin Sans', sans-serif;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #5a0a8b;
+  }
+  
+  .campo input {
+    width: calc(100% - 10px); 
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px; 
+    border: 2px solid rgb(99, 17, 99); 
+    background-color: rgb(143, 29, 143); 
+    color: pink; 
+    text-decoration: none; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border-radius: 9px; 
+    text-align: center; 
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: pink; 
+    color: rgb(99, 17, 99); 
+  }
+  
+  .registrarme{
+    margin-top: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(133, 24, 133);
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+  }
+
+  .boton {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid rgb(99, 17, 99);
+    background-color: rgb(143, 29, 143);
+    color: pink;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 9px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.boton:hover {
+    background-color: pink;
+    color: rgb(99, 17, 99);
+}
+
+.footer {
+    background-color: rgb(252, 244, 250); 
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(133, 24, 133);
+    padding: 40px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    margin-top: 30px;
+  }
+  
+  .footer h3{
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(133, 24, 133);
+    font-size: 40px; 
+    margin-bottom: 20px; 
+  }
+  
+  footer p{
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(173, 37, 173);
+  font-size: 30px;
+  margin-top: -10px;
+  
+  }
+  
+  
+  .footer ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex; 
+  justify-content: center; 
+  }
+  
+  .footer ul li {
+  margin-right: 60px;
+  }
+  
+  .footer ul li:first-child {
+  margin-left: 60px; 
+  }
+  
+  .footer ul li img {
+  width: 30px; 
+  height: 30px;
+  }

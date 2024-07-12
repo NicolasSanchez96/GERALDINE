@@ -1,0 +1,252 @@
+.bienvenidos {
+    display: flex;
+    align-items: flex-start;
+    padding: 1px;
+    margin-top: -20px;
+    max-width: 1000px; 
+    margin: 0 auto; 
+    height: 430px; 
+    position: relative;
+}
+
+.recuadro {
+    background-color: pink;
+    padding: 10px;
+    margin-right: 20px;
+    text-align: center;
+    width: 200px; 
+    height: 101%;
+    max-height: 103%; 
+    overflow: hidden; 
+}
+
+.recuadro h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(133, 24, 133);
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.4; 
+    margin-top: 30px;
+}
+
+.registros {
+    font-family: 'Josefin Sans', sans-serif;
+    display: inline-block; 
+    background-color: rgb(151, 34, 151); 
+    color: white; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 10px; 
+}
+
+.registros:hover {
+    background-color: rgb(100, 4, 100); /* Cambio de color de fondo al pasar el mouse */
+}
+
+.galeria {
+    width: calc(100% - 240px); 
+    height: 105.2%; 
+    position: absolute; 
+    top: 0; 
+    left: 240px; 
+    overflow: hidden;
+}
+
+.galeria img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    margin-top: 2px;
+    display: none;
+}
+
+
+.galeria img.active {
+    display: block; /* Mostrar solo la imagen activa */
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(167, 21, 167);
+    color: pink;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 23px;
+    z-index: 1; 
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+.contenedor {
+    text-align: center; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    margin-top: 50px;
+  }
+  
+  .ultimas-fotos {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(133, 24, 133);
+    font-size: 30px;
+    margin-bottom: 20px; 
+  }
+  
+  .contenedor {
+    text-align: center; 
+  }
+  
+  
+  .articulos {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+  }
+  
+  .articulo {
+    flex: 1 0 32%; 
+    max-width: 32%; 
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
+  
+  @media (max-width: 768px) {
+    .articulo {
+      flex: 1 0 48%; 
+      max-width: 48%; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .articulo {
+      flex: 1 0 100%; 
+      max-width: 100%; 
+    }
+  }
+
+  .articulo a:hover {
+    background-color:pink;
+    padding: 0.300em; 
+    display: block;
+    width: 100%; 
+    border-radius: 0.300em; 
+  }
+
+  .articulo a:hover p::after {
+    content: ' \2192'; 
+    font-size: 1em; 
+    color:rgb(133, 24, 133) ; 
+  }
+  
+  .articulo img {
+    max-width: 100%; 
+  }
+
+  .articulo a {
+    text-decoration: none; 
+    color: inherit; 
+  }
+  
+  .articulo p {
+    margin-top: 5px; 
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(133, 24, 133);
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+
+  .biografia {
+    background-image: url('../media/mardel/AA008\ \(1\).jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 80vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contenido {
+    background-color: rgba(255, 255, 255, 0.973); 
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .contenido h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(133, 24, 133);
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 6px;
+  }
+  
+  .contenido p {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(133, 24, 133);
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+
+.footer {
+    background-color: rgb(252, 244, 250); 
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(133, 24, 133);
+    padding: 40px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    margin-top: 30px;
+}
+
+.footer h3{
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(133, 24, 133);
+    font-size: 40px; /* Aumenta el tamaño de la fuente */
+    margin-bottom: 20px; /* Aumenta el espacio inferior */
+}
+
+footer p{
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(173, 37, 173);
+  font-size: 30px;
+  margin-top: -10px;
+
+}
+
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex; 
+  justify-content: center; 
+}
+
+.footer ul li {
+  margin-right: 60px; 
+}
+
+.footer ul li:first-child {
+  margin-left: 60px; 
+}
+
+.footer ul li img {
+  width: 30px; 
+  height: 30px;
+}
